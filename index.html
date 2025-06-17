@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>بورتفوليو حازم</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(145deg, #1a1a1a, #222);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    }
+
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid #00ffc3;
+      box-shadow: 0 0 15px #00ffc3;
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-size: 2.5em;
+      color: #00ffc3;
+    }
+
+    p {
+      max-width: 600px;
+      margin: 10px auto;
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #00ffc3;
+      border-bottom: 2px solid #00ffc3;
+      display: inline-block;
+      margin-bottom: 30px;
+    }
+
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1b1b1b;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 0 10px #111;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px #00ffc3;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #00ffc3;
+      color: #000;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #00cfa6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9em;
+      background: #111;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="1.jpg" alt="Hazem">
+  <h1>Hazem Essam</h1>
+  <p>I’m a web and mobile developer who focuses on clean design and smooth user experience everything should look great and work even better! I’ve also got good knowledge in networking and finished a CCNA course </p>
+
+<div class="section">
+  <h2>مهاراتي</h2>
+  <div class="skills">
+    <div class="card">HTML5 / CSS</div>
+    <div class="card">JavaScript </div>
+    <div class="card">ccna</div>
+    <div class="card"> c++ / python </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>مشاريعي</h2>
+  <div class="projects">
+    <div class="card">
+      <h3> تحويش المال 💰</h3>
+      <p>تطبيق لتتبع المصروفات وتحليلها برسوم بيانية وتصدير PDF/Excel.</p>
+    </div>
+    <div class="card">
+      <h3> ادخار المال💰</h3>
+      <p>تطبيق لتسجيل المصاريف والدخل بطريقة منظمة، مع واجهة أنيقة تدعم الوضع الليلي، ويُظهر إجمالي المال المدخر أو المصروف.</p>
+    </div>
+    <div class="card">
+      <h3> لعبه انت روحي ❤️</h3لا>
+      <p>لعبة أسئلة رومانسية للحبيبين، بواجهة محببة وجريئة وتقسيم رائع للأسئلة.</p>
+    </div>
+    <div class="card">
+      <h3>يوم عرفه ❤️</h3لا>
+      <p>"تطبيق روحاني تفاعلي ليوم عرفة يساعد المسلم على الذكر، الدعاء، الصلاة على النبي ﷺ، قراءة القرآن، ومعرفة فضل يوم عرفة، من خلال واجهة منظمة بأزرار تنقل بين الأقسام المختلفة بسهولة."
+  </p>
+    </div>
+    <div class="card">
+      <h3>  تطبيق تحليل النوم </h3لا>
+      <p>
+    أداة ذكية تستخدم مستشعرات الهاتف (مثل الميكروفون والحركة) لتتبع سلوك النوم، مثل وقت النوم والاستيقاظ، وعدد مرات التقلب أو الاستيقاظ أثناء الليل، ثم يعرض للمستخدم تقارير مفصلة عن جودة نومه، مع نصائح مخصصة لتحسين نمط نومه وصحته العامة
+  </p>
+    </div>
+    </div>
+</div>
+
+<div class="section" style="text-align:center;">
+  <h2>تواصل معي</h2>
+  <p></p>
+  <a href="mailto:hazem3ssam735@gmail.com" class="btn">راسلني الآن</a>
+</div>
+
+<footer>
+  &copy; 2025 جميع الحقوق محفوظة لحازم عصام.
+</footer>
+
+<script>
+  // Scroll effect (بسيط بدون مكتبة)
+  const cards = document.querySelectorAll('.card');
+  window.addEventListener('scroll', () => {
+    cards.forEach(card => {
+      const rect = card.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) {
+        card.style.opacity = 1;
+        card.style.transform = "translateY(0)";
+      }
+    });
+  });
+  cards.forEach(card => {
+    card.style.opacity = 0;
+    card.style.transform = "translateY(30px)";
+    card.style.transition = "0.6s ease";
+  });
+</script>
+
+</body>
+</html>
